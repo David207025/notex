@@ -1,0 +1,27 @@
+textarea {
+  field-sizing: content;
+}
+
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#layout {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+#main-content {
+  flex-grow: 1;
+  height: 100vh;
+}
