@@ -677,7 +677,7 @@ export default function FileExplorer({
     <Box>
       <Box sx={{ display: 'flex', alignItems: 'center', mb: 1, pl: 2, mt: 2 }}>
         <FolderIcon sx={{ mr: 1 }} />
-        <Box sx={{ flexGrow: 1, fontWeight: 'bold' }}>Notex</Box>
+        <Box sx={{ flexGrow: 1, fontWeight: 'bold' }}>LTXNote</Box>
         <IconButton
           size="small"
           onClick={handleRootMenuOpen}

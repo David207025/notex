@@ -1,4 +1,4 @@
-# Notex
+# LTXNote
 
 A note taking app that includes LaTeX formula rendering
 
@@ -9,8 +9,8 @@ A note taking app that includes LaTeX formula rendering
 Clone the repository, enter the file and install all packages:
 
 <pre><code>
-git clone --depth 1 --branch main https://github.com/David207025/notex.git notex
-cd notex
+git clone --depth 1 --branch main https://github.com/David207025/LTXNote.git ltxnote
+cd ltxnote
 npm install</code></pre>
 
 Right after finishing the installation, run `npm run package`.
@@ -42,7 +42,7 @@ Recommendations are appreciated
 
 ### Creating Notebook
 
-To create a notebook, click on the three dots on the sidebar next to the Notex title and then press `New Notebook`.
+To create a notebook, click on the three dots on the sidebar next to the LTXNote title and then press `New Notebook`.
 
 After typing in the name, press enter or click away to create the file.
 

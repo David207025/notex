@@ -1,5 +1,5 @@
 {
-  "name": "notex",
+  "name": "ltxnote",
   "description": "A note taking app with LaTeX formula support",
   "keywords": [
     "latex",
@@ -170,17 +170,17 @@
     "webpack-merge": "^6.0.1"
   },
   "build": {
-    "productName": "Notex",
-    "appId": "org.erb.notex",
+    "productName": "LTXNote",
+    "appId": "org.erb.ltxnote",
     "asar": true,
     "afterSign": ".erb/scripts/notarize.js",
     "asarUnpack": "**\\*.{node,dll}",
     "fileAssociations": [
       {
         "ext": "ltxnote",
-        "name": "Notex",
+        "name": "LTXNote",
         "role": "Editor",
-        "description": "Notex Whiteboard File"
+        "description": "LTXNote Whiteboard File"
       }
     ],
     "files": [
@@ -238,8 +238,8 @@
     ],
     "publish": {
       "provider": "github",
-      "owner": "electron-react-boilerplate",
-      "repo": "electron-react-boilerplate"
+      "owner": "David Vacaroiu",
+      "repo": "LTXNote"
     }
   },
   "devEngines": {
