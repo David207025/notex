@@ -51,17 +51,19 @@ export default function App() {
             width: '10cm',
           }}
         >
-          <FileExplorer
-            rootPath={notesPath}
-            openedFile={openedFile}
-            onOpenFile={(filePath) => {
-              setOpenedFile(filePath);
-              console.log('New file path: ' + filePath);
-            }}
-            onCloseFile={(filePath) => {
-              setOpenedFile('');
-            }}
-          />
+          {notesPath == '' ? null : (
+            <FileExplorer
+              rootPath={notesPath}
+              openedFile={openedFile}
+              onOpenFile={(filePath) => {
+                setOpenedFile(filePath);
+                console.log('New file path: ' + filePath);
+              }}
+              onCloseFile={(filePath) => {
+                setOpenedFile('');
+              }}
+            />
+          )}
         </Paper>
         <div id="main-content">
           <Whiteboard

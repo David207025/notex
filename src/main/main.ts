@@ -159,13 +159,6 @@ const createWindow = async () => {
       fs.writeFileSync(file, json, 'utf-8');
       return;
     }
-
-    const { filePath } = await dialog.showSaveDialog({
-      title: 'Save Whiteboard Shapes',
-      defaultPath: 'shapes.json',
-      filters: [{ name: 'JSON Files', extensions: ['json'] }],
-    });
-    if (filePath) fs.writeFileSync(filePath, json, 'utf-8');
   });
 
   // Load shapes from file
@@ -271,7 +264,6 @@ const createWindow = async () => {
       return tree;
     } catch (error) {
       console.error('Failed to read folder tree:', error);
-      throw error; // IPC will send this as rejection
     }
   });
 

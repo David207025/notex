@@ -173,7 +173,7 @@ export default function FileExplorer({
               }}
             >
               <NoteAddIcon sx={{ mr: 1 }} />
-              New File
+              New Notebook
             </MenuItem>
             <MenuItem
               onClick={() => {
@@ -628,7 +628,7 @@ export default function FileExplorer({
               }}
             >
               <NoteAddIcon sx={{ mr: 1 }} />
-              New File
+              New Notebook
             </MenuItem>
             <MenuItem
               onClick={() => {

@@ -1,38 +1,15 @@
 import React from 'react';
 import {
-  BaseBoxShapeUtil,
-  TLBaseShape,
   useEditor,
-  toDomPrecision,
   Rectangle2d,
   DefaultColorStyle,
-  DefaultSizeStyle,
-  DefaultColorThemePalette,
-  StyleProp,
-  EnumStyleProp,
-  TextShapeTool,
-  TLUiOverrides,
-  DefaultKeyboardShortcutsDialog,
-  DefaultKeyboardShortcutsDialogContent,
-  DefaultToolbar,
-  DefaultToolbarContent,
-  TLComponents,
-  TldrawUiMenuItem,
-  useIsToolSelected,
-  useTools,
-  useRelevantStyles,
   DefaultFontStyle,
-  ShapeUtil,
   TextShapeUtil,
   TLTextShape,
   TLTextShapeProps,
   HTMLContainer,
-  JsonObject,
-  TLShapeId,
   TLGeometryOpts,
   getDefaultColorTheme,
-  IndexKey,
-  TLParentId,
 } from '@tldraw/tldraw';
 import Latex from 'react-latex';
 import 'katex/dist/katex.min.css';
@@ -326,7 +303,11 @@ export default class LatexTextShapeUtil extends TextShapeUtil {
               >
                 {arr.map((element) =>
                   element.startsWith('$$') ? (
-                    <Latex>{element}</Latex>
+                    element.substring(2, -2).includes('$') ? (
+                      <Latex>{element}</Latex>
+                    ) : (
+                      <>{element}</>
+                    )
                   ) : (
                     <>{element}</>
                   ),
